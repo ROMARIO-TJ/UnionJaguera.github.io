@@ -1,0 +1,219 @@
+.comp{
+    background-image: url(../Imagenes/butterfly-7414540_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.comp__contenedor{
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.titulo__comp{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.texto__comp{
+    color: #fff;
+}
+.baja{
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.baja img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    transition: 0.5s
+    
+}
+.comp:hover .baja img{
+    bottom: 0;
+}
+.baja img:hover{
+    background-color: rgba(255, 255, 255, 0.287);
+    
+}
+/*fin com primero*/
+/*principal*/
+.principal{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.pri__contenedor{
+    display: grid;
+    margin: auto;
+    gap: 1rem;
+}
+.pri__video{
+    width: 100%;
+   
+}
+/*fin principal*/
+/*competencias*/
+.competencias{
+    padding-top: 180px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+    gap: 1rem;
+}
+.art__comp{
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+.art__comp figure{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.art__comp img{
+    width: 100% ;
+    height: 100%    ;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+.art__comp img:hover{
+    transform: scale(1.2);
+
+}.art__comp p{
+    color: #000;
+}
+
+/*Modal*/
+.modal{
+    position: fixed;
+    padding: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    z-index: 4;
+    display: flex;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal--show{
+   opacity: 1;
+   pointer-events: unset;
+}
+.modal__contenedor{
+    width: 80%;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 0;
+    padding: 10px;
+    display: grid;
+    gap: 2rem;
+}
+.modal__img{
+    width: 80%;
+    margin: auto;
+}
+.titulo_contenedor{
+    text-align: center;
+}
+.parrafo__contenedor{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+}
+
+.cerrar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.502);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    left: 50%;
+    top: -100%;
+    transition: 1s;
+}
+.cerrar:hover{
+    
+    background-color:  rgba(255, 255, 255, 0.13) ;
+}
+.modal:hover .cerrar{
+    top: 10%;
+}
+ .modal::-webkit-scrollbar{
+    width: 7px;
+ }
+
+ .modal::-webkit-scrollbar-thumb{
+    background-color: rgb(6, 243, 30);
+    border-radius: 5px;
+ }
+@media (max-width:500px){
+    /*inicio*/
+    .inicio {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+        position: relative;
+        overflow: hidden;
+    }
+    /*fin inicio*/
+    /*cerra modal*/
+    .modal:hover .cerrar{
+        top: 3%;
+    }
+    /*fin cerrar modal*/
+    .modal{
+        padding: 0;
+    }
+    .modal__contenedor{
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+    }
+    .modal__img{
+        width: 80%;
+        margin: auto;
+    }
+    .titulo_contenedor{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .parrafo__contenedor{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        font-size: 1rem;
+    }
+}
+/*fin Modal*/

@@ -1,0 +1,342 @@
+
+.inicio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.inicio::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 20%;
+    background-color: rgb(7, 85, 10);
+    bottom: -100%;
+    left: 0;
+    transition: 1s;
+    z-index: 2;
+}
+
+.inicio::before {
+    top: -100%;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 20%;
+    right: 1px;
+    background-color: rgb(255, 243, 15);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.inicio:hover::before {
+    top: 0;
+
+
+}
+
+.inicio:hover::after {
+    bottom: 0;
+}
+/*slider*/
+.slider01{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    background: #141515;
+}
+
+.img-slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.slider01 .img-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property:clip-path ;
+}
+.img-slide .imagen-slider{
+    z-index: 1;
+    width: 100%;
+    
+    height: 100%;
+    border-radius: 5px;
+}
+
+.boton02{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.boton02 a{
+    color: #fff;
+    background-color: rgba(32, 130, 12, 0.598);
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.boton02 a::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(215, 215, 233);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+.boton02 a:hover::before{
+    top: 0;
+}
+.boton02 a:hover{
+    color: black;
+}
+
+
+
+/*botones de navegacion*/
+.boton__slider{
+   width: 100%;
+   height: 40px;
+   position: absolute;
+   bottom: 0;
+   display: grid;
+   grid-template-columns: repeat(4, 40px);
+   justify-content: center;
+   
+}
+.nav-btn{
+    z-index: 2;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btn img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.nav-btn img:hover{
+    background-color: rgba(255, 255, 255, 0.268);
+    border-radius: 50%;
+}
+.nav-btn.active{
+    background-color: rgba(6, 243, 30, 0.334);
+    border-radius: 50%;
+}
+/*fin botones de navegacion*/
+/*fin slider*/
+/*novedades*/
+.padre-nov {
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    gap: 2em;
+    
+}
+
+/*titulo*/
+.titulo {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: green solid 6px;
+}
+
+.titulo h2 {
+    font-size: 2rem;
+}
+
+.novedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    width: 80%;
+    margin: auto;
+    gap: 1em;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+}
+.nov1{
+    overflow: hidden;
+}
+.nov1 img {
+    width: 300px;
+    height: 200px; 
+    transition: all 500ms ease;
+}
+.novedades:hover  .nov1 img{
+    transform: scale(1.2);
+}
+
+.nov2 {
+    align-items: center;
+}
+
+.novedades::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 10px;
+    background-color: rgb(7, 85, 10);
+    bottom: -100%;
+    transition: 0.5s;
+}
+
+.novedades::before {
+    top: -100%;
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 10px;
+    right: 1px;
+    background-color: rgb(255, 243, 15);
+    transition: 0.5s;
+   
+}
+
+.novedades:hover::before {
+    top: 0;
+
+
+}
+
+.novedades:hover::after {
+    bottom: 0;
+}
+
+.novedades:hover .nov2 h2 {
+
+    text-decoration: underline;
+}
+/*fin novedades*/
+/*Modal*/
+.modal{
+    position: fixed;
+    padding: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    z-index: 4;
+    display: flex;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal--show{
+   opacity: 1;
+   pointer-events: unset;
+}
+.modal__contenedor{
+    width: 80%;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 0;
+    padding: 10px;
+    display: grid;
+    gap: 2rem;
+}
+.modal__img{
+    width: 80%;
+    margin: auto;
+}
+.titulo_contenedor{
+    text-align: center;
+}
+.parrafo__contenedor{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+}
+
+.cerrar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.502);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    left: 50%;
+    top: -100%;
+    transition: 1s;
+}
+.cerrar:hover{
+    
+    background-color:  rgba(255, 255, 255, 0.13) ;
+}
+.modal:hover .cerrar{
+    top: 10%;
+}
+ .modal::-webkit-scrollbar{
+    width: 7px;
+ }
+
+ .modal::-webkit-scrollbar-thumb{
+    background-color: rgb(6, 243, 30);
+    border-radius: 5px;
+ }
+@media (max-width:500px){
+    /*inicio*/
+    .inicio {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+        position: relative;
+        overflow: hidden;
+    }
+    /*fin inicio*/
+    /*cerra modal*/
+    .modal:hover .cerrar{
+        top: 3%;
+    }
+    /*fin cerrar modal*/
+    .modal{
+        padding: 0;
+    }
+    .modal__contenedor{
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+    }
+    .modal__img{
+        width: 80%;
+        margin: auto;
+    }
+    .titulo_contenedor{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .parrafo__contenedor{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        font-size: 1rem;
+    }
+}
+/*fin Modal*/

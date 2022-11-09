@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--etiqueta para titulo mayor-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--etiqueta para la imagen del titulo mayor-->
+    <title>Union Jaguera</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/logosinfondo.png">
+    <link rel="stylesheet" type="text/css" href="css/inicio.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/activi.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header02">
+        <nav class="navegacion">
+            <a id="logo" href="index.html">
+                <img src="Imagenes/logosinfondo.png" width="50" height="100">
+            </a>
+            <ul class="menu">
+                <li><a href="index.html#slider">Inicio</a></li>
+                <li><a href="index.html#noticias">Noticias</a></li>
+                <li><a href="index.html#primera__c">Primera C</a></li>
+                <li><a href="index.html#contenedor__menores">DV. Menores</a></li>
+                <li><a href="index.html#cont_formulario">Contactos</a></li>
+            </ul>
+            <button class="ham" type="botton">
+                <span class="br1"></span>
+                <span class="br2"></span>
+                <span class="br3"></span>
+            </button>
+        </nav>
+
+    </header>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 100)
+        })
+    </script>
+    <!-- fin  header -->
+    <!--contenedor principal-->
+    <div class="inicio">
+        <div class="slider01">
+                <div class="img-slide active">
+                    <section class="boton02">
+                        <a href="#primera">Conose mas</a>
+                    </section>
+                    <img src="Imagenes/butterfly-7414540_1280.jpg" alt="" class="imagen-slider">
+                </div >
+                <div class="img-slide">
+                    <section class="boton02">
+                        <a href="#segunda">Conose mas</a>
+                    </section>
+                    <img src="Imagenes/background-7413741_1280.jpg"alt="" class="imagen-slider">
+                </div>
+                <div class="img-slide">
+                    <section class="boton02">
+                        <a href="#tercera">Conose mas</a>
+                    </section>
+                    <img src="Imagenes/halloween-7411538_1280.jpg"alt="" class="imagen-slider">
+                </div>
+                <div class="img-slide">
+                    <section class="boton02">
+                        <a href="#cuarta">Conose mas</a>
+                    </section>
+                    <img src="Imagenes/thunderstorm-7398529_1280.jpg"alt="" class="imagen-slider">
+                </div>
+            
+            <div class="boton__slider">
+                <span class="nav-btn active"><img src="assets/punto.svg" alt=""></span>
+                <span class="nav-btn"><img src="assets/punto.svg" alt=""></span>
+                <span class="nav-btn"><img src="assets/punto.svg" alt=""></span>
+                <span class="nav-btn"><img src="assets/punto.svg" alt=""></span>
+            </div>
+          
+            
+        </div>
+    </div>
+    <div class="padre-nov">
+        <div class="titulo">
+            <h2>Actualidad</h2>
+        </div>
+        <div class="novedades" id="primera">
+            <div class="nov1">
+                <img src="Imagenes/butterfly-7414540_1280.jpg" alt="">
+
+            </div>
+            <div class="nov2">
+                <h2>lo que paso esta semana</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere fugit eveniet illum ducimus sunt et
+                    nesciunt dolores commodi laboriosam! Minima.</p>
+
+            </div>
+        </div>
+        <div class="novedades" id="segunda">
+            <div class="nov1">
+                <img src="Imagenes/background-7413741_1280.jpg" alt="">
+            </div>
+            <div class="nov2">
+                <h2>lo que paso esta semana</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere fugit eveniet illum ducimus sunt et
+                    nesciunt dolores commodi laboriosam! Minima.</p>
+
+            </div>
+        </div>
+        <div class="novedades" id="tercera">
+            <div class="nov1">
+                <img src="Imagenes/halloween-7411538_1280.jpg" alt="">
+            </div>
+            <div class="nov2">
+                <h2>lo que paso esta semana</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere fugit eveniet illum ducimus sunt et
+                    nesciunt dolores commodi laboriosam! Minima.</p>
+
+            </div>
+        </div>
+        <div class="novedades" id="cuarta">
+            <div class="nov1">
+                <img src="Imagenes/thunderstorm-7398529_1280.jpg" alt="">
+            </div>
+            <div class="nov2">
+                <h2>lo que paso esta semana</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere fugit eveniet illum ducimus sunt et
+                    nesciunt dolores commodi laboriosam! Minima.</p>
+
+            </div>
+        </div>
+    </div>
+    <!--fin contenedor principal-->
+   
+    <!--Modal-->
+    <section class="modal" id="primero">
+        <div class="modal__contenedor">
+            <img src="Imagenes/butterfly-7414540_1280.jpg" alt="" class="modal__img">
+            <h2 class="titulo_contenedor">Titulo del articulo</h2>
+            <p class="parrafo__contenedor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sint impedit
+                dolore eius, natus fugit voluptatibus, consectetur earum, repudiandae quis at commodi maxime quasi
+                architecto exercitationem fuga ipsum magnam. Dolore sed nesciunt suscipit consectetur provident aliquid
+                iste quibusdam velit assumenda est eius natus impedit pariatur necessitatibus cum, tempora odio placeat
+                quidem a et magni officiis?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fugiat inventore repellendus.
+                Molestiae expedita velit rem rerum repellat eligendi nobis at sint, delectus quasi eveniet sapiente
+                voluptatibus molestias culpa quis, natus perspiciatis nemo omnis provident deserunt dolores vero vel.
+                Recusandae, deserunt distinctio magni, ad nesciunt alias autem aspernatur aliquid optio esse amet quasi
+                nulla, fugit at nisi dicta quia eius. A nulla nisi veritatis iste sit ipsam ad architecto inventore eius
+                saepe, in ipsa fugiat quas praesentium fugit quis beatae, soluta corporis adipisci itaque accusamus
+                atque est ratione maxime. Repellendus dolorum nostrum minus quo sint itaque obcaecati fugiat quia
+                incidunt?</p>
+                <p class="parrafo__contenedor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sint impedit
+                    dolore eius, natus fugit voluptatibus, consectetur earum, repudiandae quis at commodi maxime quasi
+                    architecto exercitationem fuga ipsum magnam. Dolore sed nesciunt suscipit consectetur provident aliquid
+                    iste quibusdam velit assumenda est eius natus impedit pariatur necessitatibus cum, tempora odio placeat
+                    quidem a et magni officiis?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fugiat inventore repellendus.
+                    Molestiae expedita velit rem rerum repellat eligendi nobis at sint, delectus quasi eveniet sapiente
+                    voluptatibus molestias culpa quis, natus perspiciatis nemo omnis provident deserunt dolores vero vel.
+                    Recusandae, deserunt distinctio magni, ad nesciunt alias autem aspernatur aliquid optio esse amet quasi
+                    nulla, fugit at nisi dicta quia eius. A nulla nisi veritatis iste sit ipsam ad architecto inventore eius
+                    saepe, in ipsa fugiat quas praesentium fugit quis beatae, soluta corporis adipisci itaque accusamus
+                    atque est ratione maxime. Repellendus dolorum nostrum minus quo sint itaque obcaecati fugiat quia
+                    incidunt?</p>
+        </div>
+        <section class="cerrar01">
+            <img src="assets/cerrar.svg" alt="" class="cerrar">
+        </section>
+    </section>
+    <section class="modal" id="segundo">
+        <div class="modal__contenedor">
+            <img src="Imagenes/background-7413741_1280.jpg" alt="" class="modal__img">
+            <h2 class="titulo_contenedor">Titulo del articulo</h2>
+            <p class="parrafo__contenedor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sint impedit
+                dolore eius, natus fugit voluptatibus, consectetur earum, repudiandae quis at commodi maxime quasi
+                architecto exercitationem fuga ipsum magnam. Dolore sed nesciunt suscipit consectetur provident aliquid
+                iste quibusdam velit assumenda est eius natus impedit pariatur necessitatibus cum, tempora odio placeat
+                quidem a et magni officiis?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fugiat inventore repellendus.
+                Molestiae expedita velit rem rerum repellat eligendi nobis at sint, delectus quasi eveniet sapiente
+                voluptatibus molestias culpa quis, natus perspiciatis nemo omnis provident deserunt dolores vero vel.
+                Recusandae, deserunt distinctio magni, ad nesciunt alias autem aspernatur aliquid optio esse amet quasi
+                nulla, fugit at nisi dicta quia eius. A nulla nisi veritatis iste sit ipsam ad architecto inventore eius
+                saepe, in ipsa fugiat quas praesentium fugit quis beatae, soluta corporis adipisci itaque accusamus
+                atque est ratione maxime. Repellendus dolorum nostrum minus quo sint itaque obcaecati fugiat quia
+                incidunt?</p>
+        </div>
+        <section class="cerrar01">
+            <img src="assets/cerrar.svg" alt="" class="cerrar" id="cerrar2">
+        </section>
+    </section>
+    <section class="modal" id="tercero">
+        <div class="modal__contenedor">
+            <img src="Imagenes/halloween-7411538_1280.jpg" alt="" class="modal__img">
+            <h2 class="titulo_contenedor">Titulo del articulo</h2>
+            <p class="parrafo__contenedor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sint impedit
+                dolore eius, natus fugit voluptatibus, consectetur earum, repudiandae quis at commodi maxime quasi
+                architecto exercitationem fuga ipsum magnam. Dolore sed nesciunt suscipit consectetur provident aliquid
+                iste quibusdam velit assumenda est eius natus impedit pariatur necessitatibus cum, tempora odio placeat
+                quidem a et magni officiis?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fugiat inventore repellendus.
+                Molestiae expedita velit rem rerum repellat eligendi nobis at sint, delectus quasi eveniet sapiente
+                voluptatibus molestias culpa quis, natus perspiciatis nemo omnis provident deserunt dolores vero vel.
+                Recusandae, deserunt distinctio magni, ad nesciunt alias autem aspernatur aliquid optio esse amet quasi
+                nulla, fugit at nisi dicta quia eius. A nulla nisi veritatis iste sit ipsam ad architecto inventore eius
+                saepe, in ipsa fugiat quas praesentium fugit quis beatae, soluta corporis adipisci itaque accusamus
+                atque est ratione maxime. Repellendus dolorum nostrum minus quo sint itaque obcaecati fugiat quia
+                incidunt?</p>
+        </div>
+        <section class="cerrar01">
+            <img src="assets/cerrar.svg" alt="" class="cerrar" id="cerrar3">
+        </section>
+    </section>
+    <section class="modal" id="cuarto">
+        <div class="modal__contenedor">
+            <img src="Imagenes/thunderstorm-7398529_1280.jpg" alt="" class="modal__img">
+            <h2 class="titulo_contenedor">Titulo del articulo</h2>
+            <p class="parrafo__contenedor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sint impedit
+                dolore eius, natus fugit voluptatibus, consectetur earum, repudiandae quis at commodi maxime quasi
+                architecto exercitationem fuga ipsum magnam. Dolore sed nesciunt suscipit consectetur provident aliquid
+                iste quibusdam velit assumenda est eius natus impedit pariatur necessitatibus cum, tempora odio placeat
+                quidem a et magni officiis?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fugiat inventore repellendus.
+                Molestiae expedita velit rem rerum repellat eligendi nobis at sint, delectus quasi eveniet sapiente
+                voluptatibus molestias culpa quis, natus perspiciatis nemo omnis provident deserunt dolores vero vel.
+                Recusandae, deserunt distinctio magni, ad nesciunt alias autem aspernatur aliquid optio esse amet quasi
+                nulla, fugit at nisi dicta quia eius. A nulla nisi veritatis iste sit ipsam ad architecto inventore eius
+                saepe, in ipsa fugiat quas praesentium fugit quis beatae, soluta corporis adipisci itaque accusamus
+                atque est ratione maxime. Repellendus dolorum nostrum minus quo sint itaque obcaecati fugiat quia
+                incidunt?</p>
+        </div>
+        <section class="cerrar01">
+            <img src="assets/cerrar.svg" alt="" class="cerrar" id="cerrar4">
+        </section>
+    </section>
+    <!--fin Modal-->
+     <!--boton subir-->
+     <div id="boton_up">
+        <img src="assets/boton_aciarriva.svg">
+    </div>
+    <script>
+        //boton hacia arriba
+        document.getElementById("boton_up").addEventListener("click", scrollUp);
+
+        function scrollUp() {
+            var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if (currentScroll > 0) {
+                window.requestAnimationFrame(scrollUp);
+                window.scrollTo(0, currentScroll - (currentScroll / 10));
+            }
+
+        }
+
+        botonUp = document.getElementById("boton_up");
+
+        window.onscroll = function () {
+
+            var scroll = document.documentElement.scrollTop;
+
+            if (scroll > 500) {
+                botonUp.style.transform = "scale(1)";
+            } else if (scroll < 500) {
+                botonUp.style.transform = "scale(0)";
+            }
+
+        }
+    </script>
+    <!--fin boton subir-->
+    <!-- Footer -->
+    <footer>
+        <section class="pie_pagina">
+            <div class="listas">
+                <div class="box__footer1">
+                    <h2 class="titulo__footer">Union Jaguera</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, odio. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Eos, odio. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Eos, odio.
+                    </p>
+                </div>
+                <div class="box__footer2" id="estilo_letas">
+                    <a href="index.html">Inicio</a>
+                    <a href="#noticias">Noticias</a>
+                    <a href="#primera__c">Primera C</a>
+                    <a href="#contenedor__menores">DV. Menores</a>
+                    <a href="#cont_formulario">Contactos</a>
+                </div>
+                <div class="box__footer3" id="estilo_letas">
+                    <img src="assets/message-ilustration.svg" class="footer__img">
+                </div>
+            </div>
+            <div class="sociales">
+                <div class="cons">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="icon-facebook" id="iconos"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube" id="iconos"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="icon-twitter" id="iconos"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram" id="iconos"></i></a>
+                </div>
+            </div>
+            <div class="Copyright">
+                <p>Union Jaguera © 2022 | creado por ROMARIO TORRES.</p>
+            </div>
+
+        </section>
+    </footer>
+    <!--Fin Footer -->
+    <!-- fin contenedor -->
+    <!--botones de navegacio javascript-->
+    <script src="js/activi.js"></script>
+    <script src="js/cerrar.js"></script>
+</body>
+
+</html>

@@ -279,6 +279,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    justify-content: center;
 }
 
 .vid__cont {
@@ -333,7 +334,7 @@
 
 #modal__video {
     margin: auto;
-    width:100%;
+    width:inherit;
     height: 400px;
 }
 

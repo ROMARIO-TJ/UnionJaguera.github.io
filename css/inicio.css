@@ -882,7 +882,7 @@ header.abajo .menu li a {
 
     .titulo__menores {
         font-size: 1.4rem;
-        color:#00f90c;
+        color: #004603;
     }
 
     .parrafo__menores {
@@ -1026,10 +1026,12 @@ textarea {
 }
 
 @media(max-width:280px) {
-
+    .t__c{
+        font-size: 1.5rem;
+    }
     input,
     textarea {
-        width: 200px;
+        width: 160px;
     }
 
     .formulario {

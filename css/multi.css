@@ -357,7 +357,7 @@
 @media(max-width:991px) {
     .main-video {
         grid-template-columns: 2fr 1fr;
-        padding: 10px;
+        padding: 5px;
     }
 }
 

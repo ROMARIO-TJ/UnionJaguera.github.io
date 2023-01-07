@@ -312,6 +312,7 @@ header.abajo .menu li a {
 .slider {
     padding: 45px 0;
     height: 100vh;
+    display: grid;
 }
 
 .slider::before {
@@ -324,6 +325,7 @@ header.abajo .menu li a {
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../css/img10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
     z-index: -1;
 }
@@ -543,6 +545,8 @@ header.abajo .menu li a {
     --color-btn: #fff;
     --text-btn: #27a335;
     color: var(--color-title);
+    width: 80%;
+    margin: auto;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -804,7 +808,7 @@ header.abajo .menu li a {
 
 .contenedortexto__menores {
     width: 100%;
-    height: 100vh;
+    height: 500px;
     display: flex;
     margin: auto;
     z-index: 1;
@@ -973,7 +977,7 @@ textarea {
     margin-bottom: 20px;
     padding: 10px;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 12px;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;

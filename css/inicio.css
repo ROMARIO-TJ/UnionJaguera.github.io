@@ -736,6 +736,10 @@ header.abajo .menu li a {
 
     .about {
         gap: 40px;
+        padding: 10px;
+    }
+    .about__main{
+        padding-bottom: 40px;
     }
 
     .about__course {
@@ -747,7 +751,8 @@ header.abajo .menu li a {
 
     .course {
         grid-template-columns: 1fr;
-        --padding-container: 80px 0 30px;
+        width: 100%;
+        padding: 0;
     }
 
     .course--modifier {
@@ -755,8 +760,7 @@ header.abajo .menu li a {
     }
 
     .course__about {
-        padding: 20px 20px;
-        width: 95%;
+        width: 100%;
         grid-column: 1/-1;
         grid-row: 1/-1;
     }
@@ -1033,18 +1037,16 @@ textarea {
 }
 
 @media(max-width:500px) {
-
-
-
+   
     .formulario {
-        width: 250px;
+        width: 90%;
     }
 
     textarea {
         min-height: 100px;
         max-height: 500px;
         min-width: 100px;
-        max-width: 250px;
+        max-width: 100%;
     }
 }
 

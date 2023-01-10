@@ -18,3 +18,154 @@
     clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
     z-index: -1;
 }
+/*slider jugadores*/
+
+.container {
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider02 {
+    padding: 45px 0;
+}
+
+.slider__container02 {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+}
+
+.slider__body02 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    padding: 20px 20px;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider__body--show02 {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider__texts02 {
+    max-width: 600px;
+}
+
+.subtitle02 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #004603;
+    text-align: left;
+}
+
+.slider__review02 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #004603;
+}
+
+.slaider__img02 {
+    background-color: #13020265;
+    width: 300px;
+    height: 400px;
+    /*object-fit: cover;*/
+    display: block;
+    margin: 0 auto;
+    clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
+    
+}
+
+.slider__arrow02 {
+    cursor: pointer;
+    width: 90%;
+}
+
+.slider__arrow02:hover {
+    background-color: rgba(17, 189, 31, 0.74);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.slider__arrow02:nth-of-type(2) {
+    justify-self: end;
+}
+
+@media (max-width:768px) {
+    .slider__body02 {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 2em;
+    }
+    .slider__picture02 {
+        grid-row: 1/2;
+    }
+    .slaider__img02 {
+        width: 200px;
+        height: 200px;
+        /*object-fit: cover;*/
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:425px) {
+    .container {
+        width: 95%;
+        min-height: auto;
+        max-width: 1200px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    .slider__container02 {
+        grid-template-columns: 25px 1fr 25px;
+    }
+    .slider__arrow02 {
+        width: 100%;
+    }
+    .slider__img02 {
+        width: 180px;
+        height: 180px;
+    }
+    .subtitle02 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .slider__review02 {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width:280px) {
+    .slider__container02 {
+        grid-template-columns: 25px 210PX 25px;
+    }
+    .slider__arrow02 {
+        width: 100%;
+    }
+    .slider__img02 {
+        width: 180px;
+        height: 180px;
+    }
+    .subtitle02 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .slider__review02 {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+
+/*fin slider/
+/*fin slider jugadores*/
